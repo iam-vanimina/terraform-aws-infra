@@ -1,6 +1,6 @@
 module "mysql_sg" {
 ###source = "../terraform-aws-security-group"
-source = "git::https://github.com/vvramadm/terraform-aws-security-group.git?ref=main"
+source = "git::https://github.com/iam-vanimina/terraform-aws-security-group.git?ref=main"
 project_name = var.project_name
 environment = var.environment
 sg_name = "mysql"
@@ -11,7 +11,7 @@ sg_tags = var.mysql_sg_tags
 
 module "backend_sg" {
 ##source = "../terraform-aws-security-group"
-source = "git::https://github.com/vvramadm/terraform-aws-security-group.git?ref=main"
+source = "git::https://github.com/iam-vanimina/terraform-aws-security-group.git?ref=main"
 project_name= var.project_name
 environment = var.environment
 common_tags = var.common_tags
@@ -22,7 +22,7 @@ sg_tags = var.backend_tags
 
 module "frontend_sg" {
 ##source = "../terraform-aws-security-group"
-source = "git::https://github.com/vvramadm/terraform-aws-security-group.git?ref=main"
+source = "git::https://github.com/iam-vanimina/terraform-aws-security-group.git?ref=main"
 project_name= var.project_name
 environment = var.environment
 sg_name = "frontend"
@@ -33,7 +33,7 @@ sg_tags = var.frontend_tags
 
 module "bastion_sg" {
 ##source = "../terraform-aws-security-group"
-source = "git::https://github.com/vvramadm/terraform-aws-security-group.git?ref=main"
+source = "git::https://github.com/iam-vanimina/terraform-aws-security-group.git?ref=main"
 project_name= var.project_name
 environment = var.environment
 sg_name = "bastion"
@@ -44,7 +44,7 @@ sg_tags = var.bastion_sg_tags
 
 module "ansible_sg" {
 ##source = "../terraform-aws-security-group"
-source = "git::https://github.com/vvramadm/terraform-aws-security-group.git?ref=main"
+source = "git::https://github.com/iam-vanimina/terraform-aws-security-group.git?ref=main"
 project_name= var.project_name
 environment = var.environment
 sg_name = "ansible"
@@ -55,7 +55,7 @@ sg_tags = var.ansible_sg_tags
 
 module "app_alb_sg" {
 ##source = "../terraform-aws-security-group"
-source = "git::https://github.com/vvramadm/terraform-aws-security-group.git?ref=main"
+source = "git::https://github.com/iam-vanimina/terraform-aws-security-group.git?ref=main"
 project_name= var.project_name
 environment = var.environment
 sg_name = "app-alb"
@@ -66,7 +66,7 @@ sg_tags = var.app_alb_sg_tags
 
 module "web_alb_sg" {
 ##source = "../terraform-aws-security-group"
-source = "git::https://github.com/vvramadm/terraform-aws-security-group.git?ref=main"
+source = "git::https://github.com/iam-vanimina/terraform-aws-security-group.git?ref=main"
 project_name= var.project_name
 environment = var.environment
 sg_name = "web-alb"
@@ -77,7 +77,7 @@ sg_tags = var.web_alb_sg_tags
 
 module "vpn_sg" {
 ##source = "../terraform-aws-security-group"
-source = "git::https://github.com/vvramadm/terraform-aws-security-group.git?ref=main"
+source = "git::https://github.com/iam-vanimina/terraform-aws-security-group.git?ref=main"
 project_name= var.project_name
 environment = var.environment
 sg_name = "vpn"
