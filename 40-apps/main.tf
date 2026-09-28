@@ -93,7 +93,7 @@ module "ansible"{
   #monitoring             = true
   vpc_security_group_ids = [local.ansible_sg_id]
   subnet_id              = local.public_subnet_ids
-  user_data = file("roboshop.sh")
+  user_data = file("robo.sh")
   tags = merge(
     #var.common.tags,
     #var.ansible_tags,
